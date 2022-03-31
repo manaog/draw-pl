@@ -1,0 +1,18 @@
+
+.id {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.clubname {
+  display: inline-block;
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+.delete {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+}

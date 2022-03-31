@@ -1,0 +1,20 @@
+<div class="list">
+  <form class="form-submit" (submit)="addClub()">
+    <input
+      type="text"
+      name="inputClubname"
+      placeholder="Enter Clubname..."
+      class="club-input"
+      [(ngModel)]="inputClub"
+    />{{ " " }}
+    <input type="submit" value="Add Club" class="club-submit"/>
+  </form>
+  <br>
+  {{title}}
+  <br>
+  <div class="club" *ngFor="let club of clubs; let i = index;">
+    <div class="id">{{i+1}}</div>
+    <div class="clubname">{{club.name}}</div>
+    <button class="delete" (click)="removeClub(i)">Remove</button>
+  </div>
+</div>
